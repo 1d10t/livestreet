@@ -2,7 +2,7 @@
 /**
  * Project:     Smarty: the PHP compiling template engine
  * File:        Smarty.class.php
- * SVN:         $Id: Smarty.class.php 4614 2012-05-24 15:13:19Z rodneyrehm $
+ * SVN:         $Id: Smarty.class.php 4650 2012-08-22 20:45:22Z rodneyrehm $
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -57,7 +57,7 @@ if (!defined('SMARTY_PLUGINS_DIR')) {
     define('SMARTY_PLUGINS_DIR', SMARTY_DIR . 'plugins' . DS);
 }
 if (!defined('SMARTY_MBSTRING')) {
-    define('SMARTY_MBSTRING', function_exists('mb_strlen'));
+    define('SMARTY_MBSTRING', function_exists('mb_split'));
 }
 if (!defined('SMARTY_RESOURCE_CHAR_SET')) {
     // UTF-8 can only be done properly when mbstring is available!
@@ -113,7 +113,7 @@ class Smarty extends Smarty_Internal_TemplateBase {
     /**
      * smarty version
      */
-    const SMARTY_VERSION = 'Smarty-3.1.11';
+    const SMARTY_VERSION = 'Smarty-3.1-DEV';
 
     /**
      * define variable scopes

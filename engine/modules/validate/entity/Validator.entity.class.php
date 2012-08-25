@@ -162,6 +162,7 @@ abstract class ModuleValidate_EntityValidator extends Entity {
 		 * Получаем значение поля у сущности через геттер
 		 */
 		$sValue=call_user_func_array(array($oEntity,'get'.func_camelize($sField)),array());
+
 		if (($sMsg=$this->validate($sValue))!==true) {
 			/**
 			 * Подставляем имя поля в сообщение об ошибке валидации

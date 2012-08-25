@@ -16,6 +16,7 @@
 */
 
 require_once(Config::Get('path.root.engine').'/lib/external/Smarty/libs/Smarty.class.php');
+require_once Config::Get('path.smarty.plug').'/smarty_internal_lstemplate.php';
 require_once(Config::Get('path.root.engine').'/lib/external/CSSTidy-1.3/class.csstidy.php');
 require_once(Config::Get('path.root.engine').'/lib/external/JSMin-1.1.1/jsmin.php');
 
@@ -343,7 +344,9 @@ class ModuleViewer extends Module {
 	 * @return Smarty
 	 */
 	public function CreateSmartyObject() {
-		return new Smarty();
+		$oSmarty = new Smarty();
+		$oSmarty->template_class = 'Smarty_Internal_LSTemplate';
+		return $oSmarty;
 	}
 	/**
 	 * Ответ на ajax запрос
