@@ -1,7 +1,7 @@
 {extends file="block.prototype.tpl"}
 
 {block name="block_wrap" prepend}
-	{assign var="sBlogType" value="stream"}
+	{assign var="sBlockType" value="stream"}
 {/block}
 
 {block name="block" prepend}

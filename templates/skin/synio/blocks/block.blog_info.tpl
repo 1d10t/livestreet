@@ -1,7 +1,7 @@
 {extends file="block.prototype.tpl"}
 
 {block name="block_wrap" prepend}
-	{assign var="sBlogType" value="blogInfo"}
+	{assign var="sBlockType" value="blogInfo"}
 {/block}
 
 {block name="block_header_class"}block-header{/block}

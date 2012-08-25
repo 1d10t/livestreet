@@ -323,6 +323,7 @@
 		{/block}{*/topic_footer*}
 	</footer>
 	{/block}{*/topic_footer_wrap*}
-	
+
+</article>
 {/block}{*/topic_body_wrap*}
 <!-- /Topic -->

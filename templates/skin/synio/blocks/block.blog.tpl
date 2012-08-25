@@ -1,7 +1,7 @@
 {extends file="block.prototype.tpl"}
 
 {block name="block_wrap"}
-	{assign var="sBlogType" value="blog"}
+	{assign var="sBlockType" value="blog"}
 	{if $oTopic}
 		{assign var="oBlog" value=$oTopic->getBlog()}
 		{if $oBlog->getType()!='personal'}

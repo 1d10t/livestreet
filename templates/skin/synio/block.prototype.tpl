@@ -1,6 +1,6 @@
 {block name="block_wrap"}
 <section
-	class="{block name='block_class'}block block-type-{$sBlogType}{/block}"
+	class="{block name='block_class'}block block-type-{$sBlockType}{/block}"
 	{block name='block_attrs'}{/block}
 	>
 	{block name="block"}
@@ -18,12 +18,12 @@
 		{/block}{*/block_title_wrap*}
 		
 		{block name="block_js_update"}
-		<div class="block-update js-block-{$sBlogType}-update"></div>
+		<div class="block-update js-block-{$sBlockType}-update"></div>
 		{/block}{*/block_js_update*}
 		
 		{block name="block_nav_wrap"}
 		<ul
-			class="nav nav-pills js-block-{$sBlogType}-nav"
+			class="nav nav-pills js-block-{$sBlockType}-nav"
 			{block name="block_nav_attrs"}{/block}
 			>
 			{block name="block_nav"}
@@ -43,7 +43,7 @@
 		
 		{block name="block_js_content_wrap"}
 		<div
-			class="js-block-{$sBlogType}-content"
+			class="js-block-{$sBlockType}-content"
 			{block name="block_js_content_attrs"}{/block}
 			>
 			{block name="block_js_content"}
