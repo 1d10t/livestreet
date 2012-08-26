@@ -1,8 +1,11 @@
 {extends file="block.prototype.tpl"}
 
+{block name="block_head" append}
+	{assign var="sBlockType" value="tags"}
+{/block}
+
 {block name="block_wrap"}
 	{if $aCityList && count($aCityList)>0}
-		{assign var="sBlockType" value="tags"}
 		{$smarty.block.parent}
 	{/if}
 {/block}

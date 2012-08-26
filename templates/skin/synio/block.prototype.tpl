@@ -1,3 +1,5 @@
+{block name="block_head"}{/block}
+
 {block name="block_wrap"}
 <section
 	class="{block name='block_class'}block block-type-{$sBlockType}{/block}"

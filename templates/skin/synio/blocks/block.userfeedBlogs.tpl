@@ -1,7 +1,10 @@
 {extends file="block.prototype.tpl"}
 
-{block name="block_wrap"}
+{block name="block_head" append}
 	{assign var="sBlockType" value="activity"}
+{/block}
+
+{block name="block_wrap"}
 	{if $oUserCurrent}
 		{$smarty.block.parent}
 	{/if}
