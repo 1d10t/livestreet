@@ -21,15 +21,22 @@
 {/block}
 
 {block name="block_nav_wrap" append}
-	<ul class="nav nav-pills js-block-stream-dropdown" {if !$sItemsHook}style="display: none;"{/if}>
+	{block name="block_nav_dropdown_wrap"}
+	<ul
+		class="{block name="block_nav_dropdown_class"}nav nav-pills js-block-stream-dropdown{/block}"
+		{block name="block_nav_dropdown_attrs"}{if !$sItemsHook}style="display: none;"{/if} {/block}
+		>
 		<li class="dropdown active js-block-stream-dropdown-trigger"><a href="#">{$aLang.block_stream_comments}</a> <i class="icon-synio-arrows"></i>
 			<ul class="dropdown-menu js-block-stream-dropdown-items">
+				{block name="block_nav_dropdown"}
 				<li class="active js-block-stream-item" data-type="comment"><a href="#">{$aLang.block_stream_comments}</a></li>
 				<li class="js-block-stream-item" data-type="topic"><a href="#">{$aLang.block_stream_topics}</a></li>
 				{$sItemsHook}
+				{/block}
 			</ul>
 		</li>
 	</ul>
+	{/block}
 {/block}
 
 {block name="block_js_content"}

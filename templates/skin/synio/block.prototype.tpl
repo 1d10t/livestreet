@@ -20,12 +20,12 @@
 		{/block}{*/block_title_wrap*}
 		
 		{block name="block_js_update"}
-		<div class="block-update js-block-{$sBlockType}-update"></div>
+		<div class="{block name="block_js_update_class"}block-update js-block-{$sBlockType}-update{/block}"></div>
 		{/block}{*/block_js_update*}
 		
 		{block name="block_nav_wrap"}
 		<ul
-			class="nav nav-pills js-block-{$sBlockType}-nav"
+			class="{block name="block_nav_class"}nav nav-pills js-block-{$sBlockType}-nav{/block}"
 			{block name="block_nav_attrs"}{/block}
 			>
 			{block name="block_nav"}
@@ -39,7 +39,7 @@
 	{/block}{*/block_header_wrap*}
 	
 	{block name="block_content_wrap"}
-	<div class="block-content">
+	<div class="{block name="block_content_class"}block-content{/block}">
 		
 		{block name="block_content"}
 		

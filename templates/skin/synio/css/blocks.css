@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------
-	–ë–õ–û–ö–ò
+	¡ÀŒ »
 ------------------------------------------------------------------- */
 
 .block 					{ padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px dotted #dce1e6; }
@@ -19,7 +19,7 @@
 
 .block .nav.nav-pills				{ margin-bottom: 0; padding-top: 15px; }
 .block .nav.nav-pills a 			{ text-decoration: none; border-bottom: 1px dotted #727a90; }
-.block .nav.nav-pills li.active a 	{ border: none; }
+.block .nav.nav-pills li.active a 	{ border-bottom: 1px solid transparent; }
 
 
 /* Block Type - Stream */

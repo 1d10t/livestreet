@@ -285,9 +285,8 @@ abstract class Plugin extends LsObject {
 	 * @return string|null
 	 */
 	static public function GetTemplatePath($sName) {
-		$sName = preg_match('/^Plugin([\w]+)(_[\w]+)?$/Ui',$sName,$aMatches)
-			? strtolower($aMatches[1])
-			: strtolower($sName);
+		$sPluginName = Engine::GetPluginName($sName);
+		$sName = strtolower($sPluginName ? $sPluginName : $sName);
 		if(!isset(self::$aTemplatePath[$sName])) {
 			$aPaths=glob(Config::Get('path.root.server').'/plugins/'.$sName.'/templates/skin/*',GLOB_ONLYDIR);
 			$sTemplateName=($aPaths and in_array(Config::Get('view.skin'),array_map('basename',$aPaths)))

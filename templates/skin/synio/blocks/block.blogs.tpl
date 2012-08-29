@@ -11,10 +11,10 @@
 {/block}
 
 {block name="block_nav"}
-	<li class="active js-block-blogs-item" data-type="top"><a href="#">{$aLang.block_blogs_top}</a></li>
+	<li class="active js-block-{$sBlockType}-item" data-type="top"><a href="#">{$aLang.block_blogs_top}</a></li>
 	{if $oUserCurrent}
-		<li class="js-block-blogs-item" data-type="join"><a href="#">{$aLang.block_blogs_join}</a></li>
-		<li class="js-block-blogs-item" data-type="self"><a href="#">{$aLang.block_blogs_self}</a></li>
+		<li class="js-block-{$sBlockType}-item" data-type="join"><a href="#">{$aLang.block_blogs_join}</a></li>
+		<li class="js-block-{$sBlockType}-item" data-type="self"><a href="#">{$aLang.block_blogs_self}</a></li>
 	{/if}
 {/block}
 

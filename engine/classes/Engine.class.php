@@ -1102,7 +1102,7 @@ class Engine extends LsObject {
 		if($aInfo[Engine::CI_INHERIT]){
 			$sInheritClass = $aInfo[Engine::CI_INHERIT];
 			$sParentClass = Engine::getInstance()->Plugin_GetParentInherit($sInheritClass);
-			if(!class_alias($sParentClass,$sClassName)){
+			if(!func_class_alias($sParentClass,$sClassName)){ // class_alias не позволяет увидеть inherit-классы через get_parent_class и Reflection
 				dump("(autoload $sParentClass) Can not load CLASS-file");
 			} else {
 				return true;
